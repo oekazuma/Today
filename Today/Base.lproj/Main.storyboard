@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Today" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="◯◯◯◯年△△月☓☓日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wez-lJ-kaP" userLabel="DateLabel">
+                                <rect key="frame" x="113" y="115" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="◯曜日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN5-so-bOD">
+                                <rect key="frame" x="113" y="221" width="87" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="3DV-7P-AQb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平成◯◯年" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dH3-O4-J8A">
+                                <rect key="frame" x="113" y="169" width="84" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="干支" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW1-kU-dCG">
+                                <rect key="frame" x="113" y="288" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西暦：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z62-0D-Qhe">
+                                <rect key="frame" x="71" y="115" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="曜日：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8D-Ia-b2s">
+                                <rect key="frame" x="71" y="232" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和暦：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0l-6Y-SEM">
+                                <rect key="frame" x="71" y="171" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="干支：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beJ-uk-7Jh">
+                                <rect key="frame" x="71" y="288" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="「今日」をシェアしよう！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWZ-jV-FKZ">
+                                <rect key="frame" x="80" y="376" width="208" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日は？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQT-C2-HyU">
+                                <rect key="frame" x="147" y="48" width="80" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="9w5-T5-JYe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZY6-Gg-V2y">
+                                <rect key="frame" x="153" y="478" width="62" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ツイート" image="Twitter"/>
+                                <connections>
+                                    <action selector="tweet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8V7-Dt-4Pc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dH3-O4-J8A" firstAttribute="top" secondItem="Wez-lJ-kaP" secondAttribute="bottom" constant="33" id="2Zf-Fp-bTc"/>
+                            <constraint firstItem="z62-0D-Qhe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="95" id="2d7-mh-OUQ"/>
+                            <constraint firstItem="beJ-uk-7Jh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="8Y3-LD-RNL"/>
+                            <constraint firstItem="beJ-uk-7Jh" firstAttribute="top" secondItem="D8D-Ia-b2s" secondAttribute="bottom" constant="35" id="CgE-QU-tdy"/>
+                            <constraint firstItem="G0l-6Y-SEM" firstAttribute="top" secondItem="z62-0D-Qhe" secondAttribute="bottom" constant="35" id="FCg-oO-Jw7"/>
+                            <constraint firstItem="dH3-O4-J8A" firstAttribute="leading" secondItem="Wez-lJ-kaP" secondAttribute="leading" id="FMo-yC-0K6"/>
+                            <constraint firstItem="D8D-Ia-b2s" firstAttribute="top" secondItem="G0l-6Y-SEM" secondAttribute="bottom" constant="40" id="TDi-c7-YQj"/>
+                            <constraint firstItem="vQT-C2-HyU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="147" id="WHx-b9-dZm"/>
+                            <constraint firstItem="gW1-kU-dCG" firstAttribute="top" secondItem="DN5-so-bOD" secondAttribute="bottom" constant="27" id="WYP-Pf-2Nd"/>
+                            <constraint firstItem="G0l-6Y-SEM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="WjU-9N-OPi"/>
+                            <constraint firstItem="DN5-so-bOD" firstAttribute="top" secondItem="G0l-6Y-SEM" secondAttribute="bottom" constant="29" id="ZOj-J0-XnP"/>
+                            <constraint firstItem="gW1-kU-dCG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="bSA-U0-LBs"/>
+                            <constraint firstItem="DN5-so-bOD" firstAttribute="centerY" secondItem="D8D-Ia-b2s" secondAttribute="centerY" constant="-1.5" id="eH3-Pk-gnY"/>
+                            <constraint firstItem="Wez-lJ-kaP" firstAttribute="baseline" secondItem="z62-0D-Qhe" secondAttribute="baseline" id="igY-kB-y3z"/>
+                            <constraint firstItem="DN5-so-bOD" firstAttribute="top" secondItem="dH3-O4-J8A" secondAttribute="bottom" constant="27" id="lxe-m4-jD2"/>
+                            <constraint firstItem="dH3-O4-J8A" firstAttribute="top" secondItem="z62-0D-Qhe" secondAttribute="bottom" constant="33" id="oMk-PR-a5K"/>
+                            <constraint firstItem="Wez-lJ-kaP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="tTI-O7-9vr"/>
+                            <constraint firstItem="vQT-C2-HyU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="vBK-pI-nCe"/>
+                            <constraint firstItem="D8D-Ia-b2s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="vVe-wK-oAa"/>
+                            <constraint firstItem="DN5-so-bOD" firstAttribute="leading" secondItem="dH3-O4-J8A" secondAttribute="leading" id="xiu-gW-qsI"/>
+                            <constraint firstItem="z62-0D-Qhe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="zGP-ZT-AZ1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DateLabel" destination="Wez-lJ-kaP" id="Zed-qq-V13"/>
+                        <outlet property="EtoLabel" destination="gW1-kU-dCG" id="xfx-BZ-jaV"/>
+                        <outlet property="WaLabel" destination="dH3-O4-J8A" id="LvZ-da-wRG"/>
+                        <outlet property="WeekLabel" destination="DN5-so-bOD" id="cAm-pV-Jkp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Twitter" width="300" height="258"/>
+    </resources>
+</document>
